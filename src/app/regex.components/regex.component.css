@@ -1,0 +1,17 @@
+.regex-component {
+    clear: both;
+    padding: 10px;
+    margin: 10px;
+    background-color:aliceblue;
+    border-radius: 4px;
+}
+.textSizeSlider {
+    width: 5px;
+    max-width: 5px;
+    float: left;
+    padding: 4px;
+}
+label {
+    font-size: 14pt;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+<div class="regex-component">
+<!-- For Future Capability
+    <div class="textSizeSlider">
+        Slider Here
+    </div>
+-->
+    <div id="inputText">
+        <label>Input Text:</label><br />
+        <textarea rows="8" cols="60" [(ngModel)]="regexdef.input" (keyup)="checkPatt()"></textarea>
+    </div>
+    <div>
+        <label>Modifiers:</label> 
+            Global: <input type="checkbox" [(ngModel)]="regexdef.globalModifier" (change)="checkPatt()" >&nbsp;
+            Case-Insenistive: <input type="checkbox" [(ngModel)]="regexdef.insensitiveModifier" (change)="checkPatt()" >&nbsp;
+            Multiline: <input type="checkbox" [(ngModel)]="regexdef.multilineModifier" (change)="checkPatt()" ><br/>
+        <label>Regex Input:</label>
+        <input type="text" [(ngModel)]="regexdef.pattern" size="58" (keyup)="checkPatt()">
+    </div>
+    <div>
+        <label>Output Text:</label><br/>
+        <textarea rows="8" cols="60" [(ngModel)]="regexdef.ouput" readonly></textarea>
+    </div>
+    <span id="jsRegexRef">
+        <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_W3Schools">
+            W3Schools JavaScript RegEx Reference
+        </a>
+    </span>
+</div>

@@ -1,0 +1,10 @@
+<div class="ascii-component">
+    <div id="inputText" class="textarea">
+        Input Text<br />
+        <textarea rows="10" cols="60" [(ngModel)]="convert.inputText" autofocus (keyup)="isNumeric(convert.inputText)"></textarea>
+    </div>
+    <div class="textarea">
+        Ouput Text <br/>
+        <textarea rows="10" cols="60" [(ngModel)]="convert.outputText" readonly></textarea>
+    </div>
+</div>
